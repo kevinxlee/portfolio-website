@@ -18,7 +18,7 @@ function MyNavbar({ darkMode }: { darkMode: boolean }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/resume">Resume</Nav.Link> {/* Replaced dropdown with simple link */}
           </Nav>
         </Navbar.Collapse>

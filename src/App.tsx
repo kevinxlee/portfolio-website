@@ -43,7 +43,7 @@ function App() {
         <MyNavbar darkMode={darkMode} />
       </div>
       <Routes>
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/resume" element={<ResumePage darkMode={darkMode} />} /> {/* Add this route */}
         {/* other routes */}
       </Routes>
