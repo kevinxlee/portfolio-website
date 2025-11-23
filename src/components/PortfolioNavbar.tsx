@@ -20,6 +20,7 @@ function MyNavbar({ darkMode }: { darkMode: boolean }) {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/resume">Resume</Nav.Link> {/* Replaced dropdown with simple link */}
+            <Nav.Link as={Link} to="/photos">Photos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

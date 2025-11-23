@@ -5,6 +5,7 @@ import MyNavbar from './components/PortfolioNavbar';
 import HomePage from './components/home/HomePage';
 import BrandName from './components/brandname/BrandName';
 import ResumePage from './components/resume/ResumePage'; /* Imported ResumePage */
+import PhotosPage from './components/photos/PhotosPage';
 import { FaMoon, FaSun, FaLinkedin } from 'react-icons/fa'; /* Added FaLinkedin */
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/resume" element={<ResumePage darkMode={darkMode} />} /> {/* Add this route */}
+        <Route path="/photos" element={<PhotosPage darkMode={darkMode}/>} />
         {/* other routes */}
       </Routes>
     </>
