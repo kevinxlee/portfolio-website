@@ -29,9 +29,9 @@ const PhotosPage: React.FC<PhotosPageProps> = ({ darkMode = false }) => {
     const [accessToken, setAccessToken] = useState<string | null>(null);
 
     // ===== GOOGLE CONFIG =====
-    const CLIENT_ID = "618324923698-52v78kdn7ja29e7kiav053l7m7g280f1.apps.googleusercontent.com";
+    const CLIENT_ID = "replace_me";
     const SCOPES = "https://www.googleapis.com/auth/drive";
-    const API_KEY = "AIzaSyCZ0WXPDTP3GGcRc1BwUSic12pACs7vJdk";
+    const API_KEY = "replace_me";
 
     // Load GIS script on mount
     useEffect(() => {
