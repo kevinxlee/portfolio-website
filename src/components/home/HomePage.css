@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Changed from flex-start to center */
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1rem 25%;
+    height: 100vh
 }
 
 .brand-and-social {
@@ -12,6 +13,7 @@
     align-items: center; /* Centers everything horizontally */
     width: 100%;
     gap: 1rem; /* Adds space between brand-name-group and social link */
+    transform: translateY(-90px); /* Move up by 50px - adjust as needed */
 }
 
 .brand-name-group {

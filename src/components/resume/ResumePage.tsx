@@ -1,7 +1,7 @@
 import './ResumePage.css';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { useState, useEffect, useRef } from 'react';
-import { FaDownload, FaSearchPlus, FaSearchMinus, FaHandPaper } from 'react-icons/fa';
+import { FaSearchPlus, FaSearchMinus, FaHandPaper } from 'react-icons/fa';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
