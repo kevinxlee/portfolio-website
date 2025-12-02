@@ -32,6 +32,15 @@ function PortfolioNavbar({ darkMode, activeSection }: { darkMode: boolean; activ
             >
               Home
             </Nav.Link>
+
+            <Nav.Link 
+              href="#about" 
+              active={activeSection === 'about'}
+              onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
+            >
+              About
+            </Nav.Link>
+            
             <Nav.Link 
               href="#resume" 
               active={activeSection === 'resume'}

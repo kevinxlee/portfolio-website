@@ -49,6 +49,30 @@
     color: #005582; /* Darker blue on hover */
 }
 
+.github-link {
+    font-size: 3rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth color transition */
+}
+
+.github-link.dark {
+    font-size: 3rem;
+    color: #BBB;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth color transition */
+}
+
+.github-link:hover {
+    color: #4078c0; /* GitHub blue color on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+.github-link.dark:hover {
+    color: #79b8ff; /* Lighter blue for dark mode on hover */
+    text-decoration: none; /* Remove underline */
+}
+
 .email-link {
     font-size: 3rem;
     color: #333;

@@ -2,6 +2,7 @@ import './App.css'
 import { useState, useEffect } from 'react';
 import PortfolioNavbar from './components/navbar/PortfolioNavbar';
 import HomePage from './components/home/HomePage';
+import AboutPage from './components/about/AboutPage';
 import ResumePage from './components/resume/ResumePage';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
@@ -33,7 +34,7 @@ function App() {
     if (!scrollContainer) return;
 
     const handleScroll = () => {
-      const sections = ['home', 'resume'];
+      const sections = ['home', 'about', 'resume'];
       const scrollPosition = scrollContainer.scrollTop + 200;
 
       for (const sectionId of sections) {
@@ -67,6 +68,10 @@ function App() {
       <div className="scroll-container">
         <section id="home" className="scroll-section">
           <HomePage darkMode={darkMode} />
+        </section>
+
+        <section id="about" className="scroll-section">
+          <AboutPage darkMode={darkMode} />
         </section>
         
         <section id="resume" className="scroll-section">

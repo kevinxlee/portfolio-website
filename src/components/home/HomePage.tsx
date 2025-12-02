@@ -3,6 +3,7 @@ import BrandName from './brandname/BrandName';
 import { useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail, HiOutlineMailOpen } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 
 function HomePage({ darkMode }: { darkMode: boolean }) {
 
@@ -38,6 +39,15 @@ function HomePage({ darkMode }: { darkMode: boolean }) {
             className={`linkedin-link ${darkMode ? 'dark' : ''}`}
           >
             <FaLinkedin />
+          </a>
+
+          <a
+          href="https://github.com/kevinxlee"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`github-link ${darkMode ? 'dark' : ''}`}
+          >
+          <FaGithubSquare />
           </a>
         </div>
       </div>

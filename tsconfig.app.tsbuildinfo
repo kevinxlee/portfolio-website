@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/components/portfolionavbar.tsx","./src/components/brandname/brandname.tsx","./src/components/home/homepage.tsx","./src/components/photos/photospage.tsx","./src/components/resume/resumepage.tsx"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/home/homepage.tsx","./src/components/home/brandname/brandname.tsx","./src/components/navbar/portfolionavbar.tsx","./src/components/resume/resumepage.tsx"],"version":"5.9.3"}
