@@ -1,5 +1,5 @@
 import './HomePage.css';
-import BrandName from '../brandname/BrandName';
+import BrandName from './brandname/BrandName';
 import { useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail, HiOutlineMailOpen } from "react-icons/hi";

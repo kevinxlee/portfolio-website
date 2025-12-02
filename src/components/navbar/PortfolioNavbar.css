@@ -1,0 +1,26 @@
+/* Custom active link styling */
+.navbar-light .nav-link.active {
+    color: #0a66c2 !important;
+    font-weight: 600;
+    border-bottom: 2px solid #0a66c2;
+  }
+  
+  .navbar-dark .nav-link.active {
+    color: #ffffff !important;
+    font-weight: 600;
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  /* Mobile: Better navbar styling */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: inherit;
+        /* padding: 1rem;
+        margin-top: 0.5rem; */
+      }
+      
+      /* Keep toggle button aligned to the right */
+      .navbar-toggler {
+        margin-left: auto;
+      }
+  }

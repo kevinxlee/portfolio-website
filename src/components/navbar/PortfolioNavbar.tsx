@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../App.css';
+import './PortfolioNavbar.css';
 
 function PortfolioNavbar({ darkMode, activeSection }: { darkMode: boolean; activeSection: string }) {
   const scrollToSection = (sectionId: string) => {
@@ -15,16 +15,16 @@ function PortfolioNavbar({ darkMode, activeSection }: { darkMode: boolean; activ
 
   return (
     <Navbar
-      expand="lg"
+      expand="sm"
       bg={darkMode ? 'dark' : 'white'}
       variant={darkMode ? 'dark' : 'light'}
       data-bs-theme={darkMode ? 'dark' : 'light'}
       className={darkMode ? 'bg-dark navbar-dark' : 'bg-white navbar-light'}
     >
-      <Container className="justify-content-center">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-          <Nav className="ms-auto">
+      <Container fluid className="px-0">
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className='mr-auto'>
             <Nav.Link 
               href="#home" 
               active={activeSection === 'home'}
@@ -38,13 +38,6 @@ function PortfolioNavbar({ darkMode, activeSection }: { darkMode: boolean; activ
               onClick={(e) => { e.preventDefault(); scrollToSection('resume'); }}
             >
               Resume
-            </Nav.Link>
-            <Nav.Link 
-              href="#photos" 
-              active={activeSection === 'photos'}
-              onClick={(e) => { e.preventDefault(); scrollToSection('photos'); }}
-            >
-              Photos
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

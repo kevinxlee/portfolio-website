@@ -25,15 +25,10 @@ html, body {
   padding: 1rem 10%;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: height 0.35s ease;
 }
 
 /* Mobile: Reduce padding on small screens */
-@media (max-width: 768px) {
-  .header-row {
-    padding: 0.5rem 1rem;
-    flex-wrap: wrap;
-  }
-}
 
 .bg-dark .header-row {
   background-color: #212529;
@@ -54,11 +49,6 @@ html, body {
 }
 
 /* Mobile: Adjust padding for smaller screens */
-@media (max-width: 768px) {
-  .scroll-section {
-    padding-top: 120px; /* More space for potentially wrapped navbar */
-  }
-}
 
 .dark-mode-toggle {
   background: none;
@@ -75,26 +65,4 @@ html, body {
 
 .dark-mode-toggle:hover {
   opacity: 0.7;
-}
-
-/* Custom active link styling */
-.navbar-light .nav-link.active {
-  color: #0a66c2 !important;
-  font-weight: 600;
-  border-bottom: 2px solid #0a66c2;
-}
-
-.navbar-dark .nav-link.active {
-  color: #ffffff !important;
-  font-weight: 600;
-  border-bottom: 2px solid #ffffff;
-}
-
-/* Mobile: Better navbar styling */
-@media (max-width: 991px) {
-  .navbar-collapse {
-    background-color: inherit;
-    padding: 1rem;
-    margin-top: 0.5rem;
-  }
 }
