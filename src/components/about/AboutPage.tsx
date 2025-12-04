@@ -1,5 +1,5 @@
 import './AboutPage.css'
-function AboutPage({darkMode}: {darkMode: boolean}) {
+function AboutPage() {
     return <div className="about-container">
         <h1>About me</h1>
         <p>
